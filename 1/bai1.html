@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BÀI 1</title>
+</head>
+<body>
+<script>
+    //a
+    let arr=[];
+    let n=+prompt("nhap vao so phan tu cua mang :");
+    for(let i=0;i<n;i++){
+        let x=+prompt("nhap so nguyen");
+        arr.push(x);
+    }
+    document.write(arr);
+
+    //d
+
+    let max=arr[0];
+    let max_index=0;
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>max){
+            max=arr[i];
+            max_index=i;
+        }
+    }
+    document.write("so lon nhat la "+max+" tai "+max_index)
+
+</script>
+</body>
+</html>
